@@ -563,16 +563,14 @@ const airports = [
 
 /*WARM UP 🏋️‍♂️ convert each of the commented out functions below to arrow functions*/
 
-// let myFunction = function () {
-// console.log("Function was invoked!");
-// };
-// myFunction();
+let myFunction =  () => {
+console.log("Function was invoked!");
+};
+myFunction();
 
 
-// let anotherFunction = function (param) {
-//   return param;
-// };
-// anotherFunction("Example");
+let anotherFunction = (param) => {return "param";};
+anotherFunction("Example");
 
 
 // let add = function (param1, param2) {
@@ -590,7 +588,11 @@ const airports = [
 /* Work out 💪 */
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
-
+function convert(usd){
+  const euro= usd * 0.85;
+  return ` your USD has been converted to ${euro}`
+}
+convert(5);
 
 /* TASK 2 🚀 
 // Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
@@ -599,20 +601,46 @@ const airports = [
 // 1 usd === 6.96 Turkish Lira 
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
-
+function converter (USD){
+  const euro = usd* 0.85;
+  const pounds = usd* 0.77;
+  const lira = usd* 6.96;
+  const lev = usd* 1.66;
+  const hryvnia = usd* 27.7;
+}converter();
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
-
+function getcity (arr,city){
+  for (let i = 0; i <airports.length; i++){
+    if (airports[i].code === code){
+      console.log(airports[i].city);
+      console.log(airports[i].country);
+    }
+  }
+}getcity(airports, "AAA");
 
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
-
-
+function phones (arr, phone){
+  for(let i = 0; i <arr.length;
+    i++)
+    if (airports[i].city === city){
+      console.log(airports[i].phone);
+    }
+}
+phones(airports, "albany");
 
 /*TASK 5 🚀 
 // Write a function that will return all the airports in a given country  */
+function ports (arr, county){
+  for(let i = 0; i < arr.length; i++)
+  if (airports[i].country === country){
+    console.log(airports[i].name);
+    console.log(airports[i].state);
+  }
+}ports(airports, "United States");
 
 
 
@@ -624,7 +652,14 @@ const airports = [
 
 /*TASK 7 🚀
 // Write a function that takes an airport code and returns the number of direct flights available */
-
+function avail (arr, code){
+  for(let i = 0; i <arr.length;
+    i++)
+    if (airports[i].code === code){
+      console.log(airports[i].tz);
+    }
+}
+avail(airports, "ABR");
 
 
 /*TASK 8 🚀
