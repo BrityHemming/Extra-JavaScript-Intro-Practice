@@ -561,37 +561,64 @@ const airports = [
       "carriers": "17"
     },];
 
-/*WARM UP 🏋️‍♂️ convert each of the commented out functions below to arrow functions*/
+//WARM UP 🏋️‍♂️ convert each of the commented out functions below to arrow functions
 
-// let myFunction = function () {
-// console.log("Function was invoked!");
-// };
-// myFunction();
+ //let myFunction = function () {
+   //console.log("Function was invoked!");};
+//myFunction();
+//let myFunction = () => myFunction
+//console.log(myFunction)
 
 
 // let anotherFunction = function (param) {
 //   return param;
 // };
 // anotherFunction("Example");
+//let anotherFunction = ("param") => 
+    //return param; 
+//let anotherFunction = (param) => param;
+//console.log(anotherFunction)
+
+
+
+
 
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
 // add(1,2);
+//let add = (param1, param2,) => param1 + param2
+    //console.log(add(1,2));
 
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
+//let subtract = (param1, param2) => param1 - param2
+    //console.log(subtract(1,2))
 
 
 /* Work out 💪 */
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
-
-
+//let euroDollar = (.85, 1) => .85 / 1/
+//console.log(euroDollar(.85 / 1))
+//let euroDollar = (1, .85) => 1 === .85
+//console.log(euroDollar)
+//let euroDollar = (EUR, USD) => .85 / 1
+    //console.log(euroDollar);
+//let euroDollar = (USD100, EUR85) => EUR85 === USD100
+ //console.log(euroDollar);
+  //function moneychanger(usd){
+    //return usd * 0.85
+  //}
+//console.log(10);
+//console.log(moneychanger);
+//let cash = (usd) => usd * 0.85
+//cash(10)
+//console.log(cash)
 /* TASK 2 🚀 
 // Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
 // 1 usd === 0.85 euro
@@ -599,33 +626,47 @@ const airports = [
 // 1 usd === 6.96 Turkish Lira 
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
-
+//function cashregister(usd){
+  //return usd * 0.85 
+//}
+//usd(10)
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
+//for (let i = 0; i < airports.length; i++){
+  //if (array[i].code == code){
+    //return 'The airport with code' ${array[i].code} 
+    //${array[i].city}, ${array[i].country}
+
 
 
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
-
-
+//for(let i = 0; i < airports.length; i++){
+  //if()
+//} //
 
 /*TASK 5 🚀 
 // Write a function that will return all the airports in a given country  */
 
-
+//console.log(airports);
+//console.log(airports, "cities")
 
 /*TASK 6 🚀 
 // Write a function that takes and airport name and returns the airport code
 // find the code for the following airports: Al Baha Airport, Ambler Airport, Abuja International Airport*/
-
+//let name = function
 
 
 /*TASK 7 🚀
 // Write a function that takes an airport code and returns the number of direct flights available */
-
-
+//function getLocation(array, code){
+ // for(let i = 0; i < array.length; i++){
+   // if(arr[i])code ==
+  //}
+  //console.log(airport)
 
 /*TASK 8 🚀
 // Find out what your flight options are - write a function that returns a new array of all the country names in a set of data*/
+ 
