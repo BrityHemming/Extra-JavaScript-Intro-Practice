@@ -574,8 +574,8 @@ console.log(myFunction);
 //   return param;
 // };
 var example
- let anotherFunction = (param)  => "function" + param;
-anotherFunction(example);
+//  let anotherFunction = (param)  => "function" + param;
+// anotherFunction(example);
 
 
 // let add = function (param1, param2) {
@@ -596,7 +596,17 @@ console.log(subtract(11,2));
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
 console.log("********** Task 1 **********");
+function Currency (){
+const currency1;
+const currency2;
+const exchange;
 
+if (currency1 === "USD") && (currency2 === "EUR") {
+  exchange = (USD * .85);
+  return Currency;
+}
+}
+console.log(Currency(USD * EUR));
 /* TASK 2 🚀 
 // Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
 // 1 usd === 0.85 euro
