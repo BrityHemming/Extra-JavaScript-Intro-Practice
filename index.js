@@ -566,32 +566,47 @@ const airports = [
 // let myFunction = function () {
 // console.log("Function was invoked!");
 // };
-// myFunction();
+let myFunction = () => "function was invoked";
+console.log(myFunction);
 
 
 // let anotherFunction = function (param) {
 //   return param;
 // };
-// anotherFunction("Example");
+var example
+//  let anotherFunction = (param)  => "function" + param;
+// anotherFunction(example);
 
 
 // let add = function (param1, param2) {
 //   return param1 + param2;
 // };
-// add(1,2);
+let add = (a,b) => a + b;
+console.log(add(1,2));
 
 
 // let subtract = function (param1, param2) {
 //   return param1 - param2;
 // };
 // subtract(1,2);
-
+let subtract = (a,b) => a - b;
+console.log(subtract(11,2));
 
 /* Work out 💪 */
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
+console.log("********** Task 1 **********");
+function Currency (){
+const currency1;
+const currency2;
+const exchange;
 
-
+if (currency1 === "USD") && (currency2 === "EUR") {
+  exchange = (USD * .85);
+  return Currency;
+}
+}
+console.log(Currency(USD * EUR));
 /* TASK 2 🚀 
 // Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
 // 1 usd === 0.85 euro
@@ -599,33 +614,34 @@ const airports = [
 // 1 usd === 6.96 Turkish Lira 
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
-
+console.log("********** Task 2 **********");
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
-
+console.log("********** Task 3 **********");
 
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
-
+console.log("********** Task 4 **********");
 
 
 /*TASK 5 🚀 
 // Write a function that will return all the airports in a given country  */
-
+console.log("********** Task 5 **********");
 
 
 /*TASK 6 🚀 
 // Write a function that takes and airport name and returns the airport code
 // find the code for the following airports: Al Baha Airport, Ambler Airport, Abuja International Airport*/
-
+console.log("********** Task 6 **********");
 
 
 /*TASK 7 🚀
 // Write a function that takes an airport code and returns the number of direct flights available */
-
+console.log("********** Task 7 **********");
 
 
 /*TASK 8 🚀
 // Find out what your flight options are - write a function that returns a new array of all the country names in a set of data*/
+console.log("********** Task 8 **********");
