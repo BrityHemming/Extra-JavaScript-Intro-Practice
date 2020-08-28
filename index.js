@@ -576,8 +576,8 @@ const airports = [
 // anotherFunction("Example");
 //let anotherFunction = ("param") => 
     //return param; 
-//let anotherFunction = (param) => param;
-//console.log(anotherFunction)
+let anotherFunction = (param) => param;
+console.log(anotherFunction)
 
 
 
@@ -612,13 +612,17 @@ const airports = [
 //let euroDollar = (USD100, EUR85) => EUR85 === USD100
  //console.log(euroDollar);
   //function moneychanger(usd){
-    //return usd * 0.85
+    //return usd * 0.85;
   //}
-//console.log(10);
+//console.log(moneychanger(10));
 //console.log(moneychanger);
 //let cash = (usd) => usd * 0.85
 //cash(10)
 //console.log(cash)
+//function convertToEuro(dollar){
+  //return dollar * 0.85;
+//}
+//console.log(convertToEuro(10));
 /* TASK 2 🚀 
 // Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
 // 1 usd === 0.85 euro
@@ -630,7 +634,7 @@ const airports = [
   //return usd * 0.85 
 //}
 //usd(10)
-
+//
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
@@ -638,7 +642,17 @@ const airports = [
   //if (array[i].code == code){
     //return 'The airport with code' ${array[i].code} 
     //${array[i].city}, ${array[i].country}
-
+    //for(let i = 0; i < airports.length; i++){
+      //if(code === airports[i]['code']){
+        //console.log(`this airport is in ${airports[i]['city']}, ${airports[i]['country']}`);
+      //}
+    //}
+  //}
+  //airportCode('AAA');
+  //airportCode('ABZ');
+  //airportCode('ABX');
+  //airportCode('ABT');
+  //airportCode('ACA');
 
 
 /*TASK 4 🚀 
@@ -646,6 +660,7 @@ const airports = [
 //for(let i = 0; i < airports.length; i++){
   //if()
 //} //
+
 
 /*TASK 5 🚀 
 // Write a function that will return all the airports in a given country  */
