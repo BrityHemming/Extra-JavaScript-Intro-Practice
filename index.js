@@ -698,5 +698,8 @@ function availableFlights(code){
 /*TASK 8 🚀
 // Find out what your flight options are - write a function that returns a new array of all the country names in a set of data*/
 function flightOptions(country){
-
+  for(let i=0; i<airport.length; i++){
+    if (airport[i].country === country)
+      return new Array = [airport[i].country]
+  }
 }
