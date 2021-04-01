@@ -590,21 +590,53 @@ const airports = [
 /* Work out 💪 */
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
-
+function forex(USD){
+  EUR = USD * 1.17303
+  return EUR
+}
 
 /* TASK 2 🚀 
-// Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
-// 1 usd === 0.85 euro
+// Take the function above a step further - you have dollars and you are visiting
+ the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine -
+ you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country -
+  the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate 
+  currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
+
+  // 1 usd === 0.85 euro
 // 1 usd === 0.77 British Pounds
 // 1 usd === 6.96 Turkish Lira 
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
 
+function exchangeRate(usd, countries[n]){
+  const n = Math.random()*4;
+const countries = [Britan, Germany, Turkey, Bulgaria, Ukraine];
+if (countries[0]){
+  let exchangeRate = usd * 0.85;
+  return exchangeRate;
+}else if(countries[1]){
+  exchangeRate = usd * 0.77;
+  return exchangeRate;
+}else if(countries[2]){
+  exchangeRate = usd * 6.96;
+  return exchangeRate;
+}else if(countries[3]){
+  exchangeRate = usd * 1.66;
+  return exchangeRate;
+}else if(countries[4]){
+  exchangeRate = usd * 27.7;
+  return exchangeRate;
+}else{
+  return "that country is not on your list";
+}
+return `Your exchange rate for ${usd} dollars in ${countries[n]} will be ${exchangeRate}`
+  }
+
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
-
+function taskMaster(airport)
 
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
