@@ -660,19 +660,43 @@ function airportNumber(city){
 
 /*TASK 5 🚀 
 // Write a function that will return all the airports in a given country  */
-
+function allAirport(country){
+  for(let i=0; i<airports.length; i++){
+    if(airport[i].country === country)
+    return airport[i]
+  }
+}
 
 
 /*TASK 6 🚀 
 // Write a function that takes and airport name and returns the airport code
 // find the code for the following airports: Al Baha Airport, Ambler Airport, Abuja International Airport*/
+function code(airportName)
+for(let i=0; i<airport.length; i++){
+  if (airportName === airport[i].name){
+    return airport[i].code;
+  }
+}
+console.log(code('Al Baha Airport'));
+console.log(code("Ambler Airport"));
+console.log(code("Abuja International Airport"));
+
 
 
 
 /*TASK 7 🚀
 // Write a function that takes an airport code and returns the number of direct flights available */
-
+function availableFlights(code){
+  for (let i=0; i<airport.length; i++){
+    if (code === airport[i].code){
+      return airport[i].direct_flights
+    }
+  }
+}
 
 
 /*TASK 8 🚀
 // Find out what your flight options are - write a function that returns a new array of all the country names in a set of data*/
+function flightOptions(country){
+
+}
