@@ -608,35 +608,41 @@ function forex(USD){
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
 
-function exchangeRate(usd, countries[n]){
-  const n = Math.random()*4;
+function exchangeRate(usd, countries){
 const countries = [Britan, Germany, Turkey, Bulgaria, Ukraine];
-if (countries[0]){
-  let exchangeRate = usd * 0.85;
-  return exchangeRate;
-}else if(countries[1]){
-  exchangeRate = usd * 0.77;
-  return exchangeRate;
-}else if(countries[2]){
-  exchangeRate = usd * 6.96;
-  return exchangeRate;
-}else if(countries[3]){
-  exchangeRate = usd * 1.66;
-  return exchangeRate;
-}else if(countries[4]){
-  exchangeRate = usd * 27.7;
-  return exchangeRate;
+if (countries === "Britan"){
+  let exchangeRates = usd * 0.85;
+  let currencyInitals = "GBR";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Germany"){
+  let exchangeRates = usd * 0.77;
+  let currencyInitals = "GER";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Turkey"){
+  let exchangeRates = usd * 6.96;
+  let currencyInitals = "TUR";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Bulgaria"){
+  let exchangeRates = usd * 1.66;
+  let currencyInitals = "BUL";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Ukraine"){
+  let exchangeRates = usd * 27.7;
+  let currencyInitals = "UKR";
+  return exchangeRates, currencyInitals;
 }else{
   return "that country is not on your list";
 }
-return `Your exchange rate for ${usd} dollars in ${countries[n]} will be ${exchangeRate}`
+return `Your exchange rate for ${usd} dollars in ${countries} will be ${exchangeRates} ${currencyInitals}`
   }
 
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
-function taskMaster(airport)
+function taskMaster(airports[Math.random()*airports.length-1].code){
+  return airports[Math.random()*airports.length-1].city, airports[Math.random()*airports.length-1].country;
+}
 
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
