@@ -640,13 +640,22 @@ return `Your exchange rate for ${usd} dollars in ${countries} will be ${exchange
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
-function taskMaster(airports[Math.random()*airports.length-1].code){
-  return airports[Math.random()*airports.length-1].city, airports[Math.random()*airports.length-1].country;
+function taskMaster(code){
+  for( let i=0; i<airports.length; i++){
+    if (airport[i].city === code){
+      return `${airport[i].city}, ${airport[i].country}`;
+    }
+  }
 }
-
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
-
+function airportNumber(city){
+  for(let i=0; i<airports.length; i++){
+    if (airport[i].city === city){
+      return airport[i].phone
+    }
+  }
+}
 
 
 /*TASK 5 🚀 
