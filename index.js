@@ -590,42 +590,116 @@ const airports = [
 /* Work out 💪 */
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
-
+function forex(USD){
+  EUR = USD * 1.17303
+  return EUR
+}
 
 /* TASK 2 🚀 
-// Take the function above a step further - you have dollars and you are visiting the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine - you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country - the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
-// 1 usd === 0.85 euro
+// Take the function above a step further - you have dollars and you are visiting
+ the following 5 countries: Britan, Germany, Turkey, Bulgaria and Ukraine -
+ you need to write a function that will take a dollar amount, and a country and return the exchange rate for that country -
+  the function should return a string that says `your exchange rate for dollarAmount dollars in country will be exchangeRate 
+  currencyInitals ` If the country is not on your list your string should return 'that country is not on your list'
+
+  // 1 usd === 0.85 euro
 // 1 usd === 0.77 British Pounds
 // 1 usd === 6.96 Turkish Lira 
 // 1 usd === 1.66 Bulgarian Lev 
 // 1 usd === 27.7 Ukrainian hryvnia */
 
+function exchangeRate(usd, countries){
+const countries = [Britan, Germany, Turkey, Bulgaria, Ukraine];
+if (countries === "Britan"){
+  let exchangeRates = usd * 0.85;
+  let currencyInitals = "GBR";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Germany"){
+  let exchangeRates = usd * 0.77;
+  let currencyInitals = "GER";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Turkey"){
+  let exchangeRates = usd * 6.96;
+  let currencyInitals = "TUR";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Bulgaria"){
+  let exchangeRates = usd * 1.66;
+  let currencyInitals = "BUL";
+  return exchangeRates, currencyInitals;
+}else if(countries === "Ukraine"){
+  let exchangeRates = usd * 27.7;
+  let currencyInitals = "UKR";
+  return exchangeRates, currencyInitals;
+}else{
+  return "that country is not on your list";
+}
+return `Your exchange rate for ${usd} dollars in ${countries} will be ${exchangeRates} ${currencyInitals}`
+  }
+
 
 /*TASK 3 🚀
 /// Write a function that takes an airport code and returns the city, country of that airport 
 // find the following codes AAA, ABZ, ABX, ABT, ACA */
-
-
+function taskMaster(code){
+  for( let i=0; i<airports.length; i++){
+    if (airport[i].city === code){
+      return `${airport[i].city}, ${airport[i].country}`;
+    }
+  }
+}
 /*TASK 4 🚀 
 // Write a function to that will find the phone number for an airport in a given city  */
-
+function airportNumber(city){
+  for(let i=0; i<airports.length; i++){
+    if (airport[i].city === city){
+      return airport[i].phone
+    }
+  }
+}
 
 
 /*TASK 5 🚀 
 // Write a function that will return all the airports in a given country  */
-
+function allAirport(country){
+  for(let i=0; i<airports.length; i++){
+    if(airport[i].country === country)
+    return airport[i]
+  }
+}
 
 
 /*TASK 6 🚀 
 // Write a function that takes and airport name and returns the airport code
 // find the code for the following airports: Al Baha Airport, Ambler Airport, Abuja International Airport*/
+function code(airportName)
+for(let i=0; i<airport.length; i++){
+  if (airportName === airport[i].name){
+    return airport[i].code;
+  }
+}
+console.log(code('Al Baha Airport'));
+console.log(code("Ambler Airport"));
+console.log(code("Abuja International Airport"));
+
 
 
 
 /*TASK 7 🚀
 // Write a function that takes an airport code and returns the number of direct flights available */
-
+function availableFlights(code){
+  for (let i=0; i<airport.length; i++){
+    if (code === airport[i].code){
+      return airport[i].direct_flights
+    }
+  }
+}
 
 
 /*TASK 8 🚀
 // Find out what your flight options are - write a function that returns a new array of all the country names in a set of data*/
+function flightOptions(country){
+  for(let i=0; i<airport.length; i++){
+    if (airport[i].country === country)
+      return new Array = [airport[i].country]
+  }
+}
