@@ -587,7 +587,6 @@ const airports = [
 // subtract(1,2);
 
 
-/* Work out 💪 */
 /* TASK 1 🚀 
 // Dollars to Euros - write a function that will take an amount of dollars (USD) and change it  into euros (EUR) - with the current exchange rate 1 USD === .85 EUR */
 
